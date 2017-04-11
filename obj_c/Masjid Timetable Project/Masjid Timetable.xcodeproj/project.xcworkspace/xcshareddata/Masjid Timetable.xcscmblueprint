@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AB1DC73D1958D67504FD2952822DE0E1EFBF49B8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AB1DC73D1958D67504FD2952822DE0E1EFBF49B8" : 9223372036854775807,
+    "4C51BBA9CD297519353E8CFDE039C4AC2D891073" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ED979C70-33E4-4F92-97A6-D39C5BE208A1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AB1DC73D1958D67504FD2952822DE0E1EFBF49B8" : "masjid\/",
+    "4C51BBA9CD297519353E8CFDE039C4AC2D891073" : "masjid-timetable\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Masjid Timetable",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Masjid Timetable.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/projects.vtgsoftware.com:2222\/ios\/masjid-timetable.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4C51BBA9CD297519353E8CFDE039C4AC2D891073"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/softninjablade\/masterjid.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AB1DC73D1958D67504FD2952822DE0E1EFBF49B8"
+    }
+  ]
+}

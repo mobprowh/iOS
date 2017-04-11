@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16B2555" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="1.0">
+    <entity name="AllStandings" representedClassName="AllStandings" syncable="YES">
+        <attribute name="groupCode" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <attribute name="lastUpdateDate" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <attribute name="standingAG" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="standingAVG" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <attribute name="standingB" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="standingG" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="standingM" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="standingOM" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="standingPTS" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <attribute name="standingType" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <attribute name="standingYG" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="teamId" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <attribute name="teamName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="league" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Leagues" inverseName="standings" inverseEntity="Leagues" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="teamId"/>
+                <index value="groupCode"/>
+                <index value="standingAVG"/>
+                <index value="standingPTS"/>
+                <index value="standingType"/>
+            </compoundIndex>
+            <compoundIndex>
+                <index value="lastUpdateDate"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <entity name="ApiUpdates" representedClassName=".ApiUpdates" syncable="YES">
+        <attribute name="apiName" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="lastUpdateDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="apiName"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <entity name="Countries" representedClassName=".Countries" syncable="YES">
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="countryId" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <attribute name="countryOrder" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <attribute name="lastUpdateDate" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <relationship name="leagues" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Leagues" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="countryId"/>
+            </compoundIndex>
+            <compoundIndex>
+                <index value="countryOrder"/>
+            </compoundIndex>
+            <compoundIndex>
+                <index value="lastUpdateDate"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <entity name="ForecastComments" representedClassName="ForecastComments" syncable="YES">
+        <attribute name="commentDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="matchId" attributeType="String" indexed="YES" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="matchId"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <entity name="ForecastLikes" representedClassName="ForecastLikes" syncable="YES">
+        <attribute name="forecastId" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="likeDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="forecastId"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <entity name="Leagues" representedClassName=".Leagues" syncable="YES">
+        <attribute name="lastUpdateDate" attributeType="Date" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <attribute name="leagueId" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <attribute name="leagueName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="leagueOrder" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" indexed="YES" syncable="YES"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Countries" syncable="YES"/>
+        <relationship name="standings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AllStandings" inverseName="league" inverseEntity="AllStandings" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="leagueId"/>
+            </compoundIndex>
+            <compoundIndex>
+                <index value="leagueOrder"/>
+            </compoundIndex>
+            <compoundIndex>
+                <index value="lastUpdateDate"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <entity name="MatchVotes" representedClassName=".MatchVotes" syncable="YES">
+        <attribute name="matchId" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="vote" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <compoundIndexes>
+            <compoundIndex>
+                <index value="matchId"/>
+            </compoundIndex>
+        </compoundIndexes>
+    </entity>
+    <elements>
+        <element name="AllStandings" positionX="324" positionY="-150" width="128" height="255"/>
+        <element name="ApiUpdates" positionX="-90" positionY="87" width="128" height="75"/>
+        <element name="Countries" positionX="135" positionY="-126" width="128" height="135"/>
+        <element name="ForecastLikes" positionX="108" positionY="-9" width="128" height="75"/>
+        <element name="Leagues" positionX="151" positionY="180" width="128" height="135"/>
+        <element name="MatchVotes" positionX="-63" positionY="6" width="128" height="30"/>
+        <element name="ForecastComments" positionX="108" positionY="0" width="128" height="30"/>
+    </elements>
+</model>

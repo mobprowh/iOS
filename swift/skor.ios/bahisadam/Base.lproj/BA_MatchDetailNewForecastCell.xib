@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewForecastsCell" id="85n-ew-Yh8" customClass="BA_MatchDetailNewForecastCollectionViewCell" customModule="bahisadam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TXE-vl-aSb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUH-co-TtB">
+                                <rect key="frame" x="8" y="8" width="359" height="30"/>
+                                <color key="backgroundColor" red="0.1960784314" green="0.72156862749999995" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Sen de tahmin yap">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="cellButtonTappedWithSender:" destination="85n-ew-Yh8" eventType="touchUpInside" id="atL-o0-kJL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="3YO-qj-P4n"/>
+                            <constraint firstAttribute="bottom" secondItem="ZUH-co-TtB" secondAttribute="bottom" constant="8" id="7VJ-7h-eAL"/>
+                            <constraint firstAttribute="trailing" secondItem="ZUH-co-TtB" secondAttribute="trailing" constant="8" id="Mwn-5g-hh9"/>
+                            <constraint firstAttribute="height" constant="46" id="T6p-Ow-w63"/>
+                            <constraint firstItem="ZUH-co-TtB" firstAttribute="top" secondItem="TXE-vl-aSb" secondAttribute="top" constant="8" id="bas-xO-3o0"/>
+                            <constraint firstItem="ZUH-co-TtB" firstAttribute="leading" secondItem="TXE-vl-aSb" secondAttribute="leading" constant="8" id="x7L-ST-Bbd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TXE-vl-aSb" secondAttribute="trailing" id="Fgy-Kg-xJS"/>
+                <constraint firstItem="TXE-vl-aSb" firstAttribute="leading" relation="lessThanOrEqual" secondItem="85n-ew-Yh8" secondAttribute="leading" constant="8" id="HDF-tk-raK"/>
+                <constraint firstItem="TXE-vl-aSb" firstAttribute="top" secondItem="85n-ew-Yh8" secondAttribute="top" priority="250" id="Pbf-ak-LjP"/>
+                <constraint firstItem="TXE-vl-aSb" firstAttribute="leading" secondItem="85n-ew-Yh8" secondAttribute="leading" priority="900" id="gOk-6Q-mTu"/>
+                <constraint firstItem="TXE-vl-aSb" firstAttribute="top" relation="lessThanOrEqual" secondItem="85n-ew-Yh8" secondAttribute="top" priority="750" id="hAP-1o-RR8"/>
+            </constraints>
+            <size key="customSize" width="375" height="51"/>
+            <point key="canvasLocation" x="24.5" y="37.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

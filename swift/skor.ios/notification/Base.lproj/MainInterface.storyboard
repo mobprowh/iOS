@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="notification" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Fbc-BC-1oo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.16078431369999999" green="0.2156862745" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oU1-3n-o38">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.16078431369999999" green="0.2156862745" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2i-vU-LEG">
+                                <color key="backgroundColor" red="0.21176470589999999" green="0.84313725490000002" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="Wmo-fy-fIr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.87843137250000003" green="0.90588235289999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnU-Fu-rB8">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.16078431369999999" green="0.2156862745" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83137254900000002" green="0.83137254900000002" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="v2i-vU-LEG" firstAttribute="leading" secondItem="oU1-3n-o38" secondAttribute="trailing" constant="4" id="GhT-Vr-2uw"/>
+                            <constraint firstItem="oU1-3n-o38" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="4" id="VHl-i4-zY9"/>
+                            <constraint firstAttribute="trailing" secondItem="dnU-Fu-rB8" secondAttribute="trailing" constant="8" id="YLJ-UE-zia"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="4" id="ZF3-80-HGd"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="8" id="Zkb-Jt-pgf"/>
+                            <constraint firstItem="oU1-3n-o38" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="8" id="btE-vh-VG9"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="v2i-vU-LEG" secondAttribute="bottom" constant="4" id="edB-9U-zwj"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="dnU-Fu-rB8" secondAttribute="bottom" constant="4" id="h8u-AL-Q3o"/>
+                            <constraint firstItem="dnU-Fu-rB8" firstAttribute="leading" secondItem="v2i-vU-LEG" secondAttribute="trailing" constant="4" id="i92-7a-qEU"/>
+                            <constraint firstItem="v2i-vU-LEG" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="t7j-zO-bNI"/>
+                            <constraint firstItem="dnU-Fu-rB8" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="4" id="tci-Ho-2lj"/>
+                            <constraint firstAttribute="trailing" secondItem="GcN-lo-r42" secondAttribute="trailing" constant="8" id="u9N-bK-wmz"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="oU1-3n-o38" secondAttribute="bottom" constant="4" id="w1D-wV-ZBX"/>
+                            <constraint firstItem="v2i-vU-LEG" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="4" id="xWa-kH-tAF"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="72"/>
+                    <connections>
+                        <outlet property="awayTeamName" destination="dnU-Fu-rB8" id="csm-ms-LJ0"/>
+                        <outlet property="contentLabel" destination="GcN-lo-r42" id="Lbp-7p-7Sv"/>
+                        <outlet property="goalsArea" destination="v2i-vU-LEG" id="rxD-sP-21b"/>
+                        <outlet property="homeTeamName" destination="oU1-3n-o38" id="FK8-QU-9E6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

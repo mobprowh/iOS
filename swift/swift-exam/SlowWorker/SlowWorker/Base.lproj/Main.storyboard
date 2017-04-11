@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlowWorker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcl-yW-dAf">
+                                <rect key="frame" x="140" y="77" width="95" height="30"/>
+                                <state key="normal" title="Start Working"/>
+                                <connections>
+                                    <action selector="doWork:" destination="BYZ-38-t0r" eventType="touchUpInside" id="seU-JX-xHl"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bUB-Sa-MA2">
+                                <rect key="frame" x="0.0" y="129" width="375" height="538"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="bl4-OG-fxA">
+                                <rect key="frame" x="243" y="82" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES"/>
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="bl4-OG-fxA" firstAttribute="centerY" secondItem="Mcl-yW-dAf" secondAttribute="centerY" id="BoZ-PX-DYa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mcl-yW-dAf" secondAttribute="trailing" constant="124" id="Ib5-F3-b6a"/>
+                            <constraint firstItem="bUB-Sa-MA2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ji3-F7-aEv"/>
+                            <constraint firstAttribute="bottom" secondItem="bUB-Sa-MA2" secondAttribute="bottom" id="O8F-bz-0nP"/>
+                            <constraint firstItem="Mcl-yW-dAf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="124" id="Zd2-9M-awX"/>
+                            <constraint firstItem="bl4-OG-fxA" firstAttribute="leading" secondItem="Mcl-yW-dAf" secondAttribute="trailing" constant="8" id="oL6-vr-zXt"/>
+                            <constraint firstItem="Mcl-yW-dAf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="57" id="pV0-JR-v5a"/>
+                            <constraint firstItem="bUB-Sa-MA2" firstAttribute="top" secondItem="Mcl-yW-dAf" secondAttribute="bottom" constant="22" id="qOd-Eg-Hdj"/>
+                            <constraint firstAttribute="trailing" secondItem="bUB-Sa-MA2" secondAttribute="trailing" id="wUQ-Oz-vyw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultsTextView" destination="bUB-Sa-MA2" id="nif-xc-sRX"/>
+                        <outlet property="spinner" destination="bl4-OG-fxA" id="RK3-sB-mwz"/>
+                        <outlet property="startButton" destination="Mcl-yW-dAf" id="yF6-cD-Axx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>9001</key>
+	<dict>
+		<key>title</key>
+		<string>OOPS</string>
+		<key>message</key>
+		<string>Bir hata olustu. Lütfen daha sonra tekrar deneyin.</string>
+		<key>cancelButtonTitle</key>
+		<string>Tamam</string>
+	</dict>
+	<key>9002</key>
+	<dict>
+		<key>title</key>
+		<string>OOPS</string>
+		<key>message</key>
+		<string>Internet baglantısı yok.</string>
+		<key>cancelButtonTitle</key>
+		<string>Tamam</string>
+	</dict>
+</dict>
+</plist>

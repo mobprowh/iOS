@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StackViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KIX-kE-QjK">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXM-gm-eNR">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="20"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" image="image0" translatesAutoresizingMaskIntoConstraints="NO" id="Sn9-0H-FYA">
+                                        <rect key="frame" x="0.0" y="20" width="560" height="514"/>
+                                        <animations/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="bZG-1D-ojj">
+                                        <rect key="frame" x="0.0" y="534" width="560" height="46"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGA-Bg-D3n">
+                                                <rect key="frame" x="8" y="8" width="160" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Next"/>
+                                                <connections>
+                                                    <action selector="onNextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HYx-56-MGo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppv-6u-oR8">
+                                                <rect key="frame" x="200" y="8" width="160" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Previous"/>
+                                                <connections>
+                                                    <action selector="onPreviousButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Uf-18-Ep7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1g-2n-boy">
+                                                <rect key="frame" x="392" y="8" width="160" height="30"/>
+                                                <animations/>
+                                                <state key="normal" title="Reset"/>
+                                                <connections>
+                                                    <action selector="onResetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xY7-7J-CG1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KIX-kE-QjK" secondAttribute="bottom" id="1ak-Wa-ZSG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KIX-kE-QjK" secondAttribute="trailing" id="BNH-qg-4R1"/>
+                            <constraint firstItem="KIX-kE-QjK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="WSX-bx-SHO"/>
+                            <constraint firstItem="KIX-kE-QjK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nIf-8o-jkm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Sn9-0H-FYA" id="6Rv-b1-xi7"/>
+                        <outlet property="label" destination="LXM-gm-eNR" id="t90-Zt-6X0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image0" width="809" height="1024"/>
+    </resources>
+</document>

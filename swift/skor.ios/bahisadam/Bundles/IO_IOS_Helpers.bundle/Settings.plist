@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cacheDirectoryName</key>
+	<string>BA_mediaCache</string>
+	<key>downloadDirectoryName</key>
+	<string>BA_downloads</string>
+	<key>databaseName</key>
+	<string>BA_Database.sqlite</string>
+	<key>databaseResourcesName</key>
+	<string>BA_Database</string>
+</dict>
+</plist>

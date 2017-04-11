@@ -1,0 +1,17 @@
+{
+    "aps": {
+        "alert": {
+            "body": "Neymar 64'",
+            "title": "Gool!!!",
+        },
+        "category": "bahisadamGoal",
+		"sound": "default",
+		"badge": "1"
+    },
+	"goalData": {
+		"homeTeamName": "Celta",
+		"awayTeamName": "Barcelona",
+		"homeTeamGoals": "3",
+		"awayTeamGoals": "2"
+	}
+}

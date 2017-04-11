@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BahisadamWatchExtension">
+                    <items>
+                        <table alignment="left" spacing="4" id="qJH-Mi-tAN">
+                            <items>
+                                <tableRow identifier="BA_liveTableRow" id="zKM-KS-CpZ" customClass="BA_LiveMatchItem" customModule="BahisadamWatchExtension">
+                                    <group key="rootItem" width="1" height="41" alignment="left" radius="16" spacing="0.0" id="BUr-fh-QJl">
+                                        <items>
+                                            <group width="0.69999999999999996" height="100" alignment="left" layout="vertical" id="QOK-YV-muZ">
+                                                <items>
+                                                    <group width="1" height="0.5" alignment="left" spacing="0.0" id="jVy-FW-quc">
+                                                        <items>
+                                                            <label width="0.80000000000000004" widthAdjustment="-4" height="100" alignment="left" text="Label" minimumScaleFactor="0.5" id="Suv-tY-Mlm">
+                                                                <color key="textColor" red="0.16078431369999999" green="0.2156862745" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="font" type="system" pointSize="9"/>
+                                                            </label>
+                                                            <label width="0.20000000000000001" height="100" alignment="left" text="7" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="ghU-A4-cSn">
+                                                                <color key="textColor" red="0.16078431369999999" green="0.2156862745" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="font" type="system" pointSize="11"/>
+                                                            </label>
+                                                        </items>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <edgeInsets key="margins" left="4" right="0.0" top="0.0" bottom="0.0"/>
+                                                    </group>
+                                                    <group width="1" height="0.5" alignment="left" spacing="0.0" id="rb5-c7-UdX">
+                                                        <items>
+                                                            <label width="0.80000000000000004" widthAdjustment="-4" height="100" alignment="left" verticalAlignment="bottom" text="Label" minimumScaleFactor="0.5" id="h66-bG-2Kd">
+                                                                <color key="textColor" red="0.16078431369999999" green="0.2156862745" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="font" type="system" pointSize="9"/>
+                                                            </label>
+                                                            <label width="0.20000000000000001" height="100" alignment="left" text="11" textAlignment="center" minimumScaleFactor="0.80000000000000004" id="GQb-sk-CT4">
+                                                                <color key="textColor" red="0.16078431369999999" green="0.2156862745" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="font" type="system" pointSize="11"/>
+                                                            </label>
+                                                        </items>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <edgeInsets key="margins" left="4" right="0.0" top="0.0" bottom="0.0"/>
+                                                    </group>
+                                                </items>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </group>
+                                            <group width="0.29999999999999999" height="100" alignment="left" id="eCm-nA-cUK">
+                                                <items>
+                                                    <label width="100" height="100" alignment="left" text="Label" textAlignment="center" minimumScaleFactor="0.59999999999999998" id="Mt1-3O-9wE">
+                                                        <color key="textColor" red="0.87843137250000003" green="0.90588235289999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    </label>
+                                                </items>
+                                                <color key="backgroundColor" red="0.21176470589999999" green="0.84313725490000002" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                            </group>
+                                        </items>
+                                        <edgeInsets key="margins" left="4" right="4" top="4" bottom="4"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="awayTeamGoals" destination="GQb-sk-CT4" id="bfa-WZ-779"/>
+                                        <outlet property="awayTeamName" destination="h66-bG-2Kd" id="3Qb-xj-N32"/>
+                                        <outlet property="homeTeamGoals" destination="ghU-A4-cSn" id="hpe-vL-5T5"/>
+                                        <outlet property="homeTeamName" destination="Suv-tY-Mlm" id="qiw-et-GPU"/>
+                                        <outlet property="matchStatusGroup" destination="eCm-nA-cUK" id="3sP-2H-dtS"/>
+                                        <outlet property="matchStatusLabel" destination="Mt1-3O-9wE" id="Q0N-Sy-bOe"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="BA_NoMatchRow" id="KKc-cp-cZM">
+                                    <group key="rootItem" width="1" height="43" alignment="left" radius="8" spacing="0.0" id="hA6-nQ-SPd">
+                                        <items>
+                                            <label width="1" height="100" alignment="left" text="Henüz başlamış bir maç bulunmamaktadır." textAlignment="center" numberOfLines="2" id="moL-M2-BJe">
+                                                <color key="textColor" red="0.16078431369999999" green="0.2156862745" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" type="system" pointSize="10"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <edgeInsets key="margins" left="4" right="4" top="4" bottom="4"/>
+                                    </group>
+                                </tableRow>
+                                <tableRow identifier="BA_LoadingMatchesRow" id="6bU-Oa-u86">
+                                    <group key="rootItem" width="1" height="43" alignment="left" radius="8" spacing="0.0" id="9Sw-Z7-T48">
+                                        <items>
+                                            <label width="1" height="100" alignment="left" text="Lütfen Bekleyin ..." textAlignment="center" numberOfLines="2" id="5rt-26-DzM">
+                                                <color key="textColor" red="0.16078431369999999" green="0.2156862745" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" type="system" pointSize="10"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <edgeInsets key="margins" left="4" right="4" top="4" bottom="4"/>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.90588235289999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="tableView" destination="qJH-Mi-tAN" id="PYs-cn-y0e"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="340"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label width="136" alignment="left" text="Alert Label" numberOfLines="4" minimumScaleFactor="0.40000000000000002" id="IdU-wH-bcW">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="bahisadamGoal" id="JfB-70-Muf">
+                        <color key="titleColor" red="0.87843137250000003" green="0.90588235289999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sashColor" red="0.0" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </notificationCategory>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller animationDuration="1" spacing="2" id="4sK-HA-Art" customClass="NotificationController" customModule="BahisadamWatchExtension">
+                    <items>
+                        <label width="1" alignment="left" text="Label" numberOfLines="4" minimumScaleFactor="0.40000000000000002" id="NpW-qo-NMR">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                        <group width="1" alignment="left" spacing="0.0" id="tky-XV-Jqj">
+                            <items>
+                                <group width="0.80000000000000004" height="50" alignment="left" layout="vertical" id="F3g-pw-NUR">
+                                    <items>
+                                        <label width="1" height="0.5" alignment="left" text="Label" minimumScaleFactor="0.40000000000000002" id="sJn-nT-9Tg">
+                                            <color key="textColor" red="0.87843137250000003" green="0.90588235289999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                        <label width="1" height="0.5" alignment="left" text="Label" minimumScaleFactor="0.40000000000000002" id="wCL-nm-WhQ">
+                                            <color key="textColor" red="0.87843137250000003" green="0.90588235289999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="0.20000000000000001" height="50" alignment="left" layout="vertical" spacing="0.0" id="yq1-6n-6d1">
+                                    <items>
+                                        <label width="1" height="0.5" alignment="left" text="11" textAlignment="center" minimumScaleFactor="0.5" id="yTY-hz-CxW">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                        <label width="1" height="0.5" alignment="left" text="7" textAlignment="center" minimumScaleFactor="0.5" id="cB2-9m-ziW">
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                    </items>
+                                    <color key="backgroundColor" red="0.21176470589999999" green="0.84313725490000002" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="4" right="0.0" top="4" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="0.0" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <edgeInsets key="margins" left="1" right="1" top="0.0" bottom="0.0"/>
+                    <connections>
+                        <outlet property="awayTeamGoals" destination="cB2-9m-ziW" id="Q1H-0N-suk"/>
+                        <outlet property="awayTeamName" destination="wCL-nm-WhQ" id="N2R-ve-QYF"/>
+                        <outlet property="homeTeamGoals" destination="yTY-hz-CxW" id="2L2-9H-69Q"/>
+                        <outlet property="homeTeamName" destination="sJn-nT-9Tg" id="rXL-8d-TTh"/>
+                        <outlet property="notificationText" destination="NpW-qo-NMR" id="TiH-Fo-F2y"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

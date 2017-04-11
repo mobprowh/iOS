@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="progressHudView" id="iN0-l3-epB" customClass="BA_ProgressHudView" customModule="SkorAdamOnTv" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ypm-yJ-tTB">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="pxD-FM-o7h"/>
+                        <constraint firstAttribute="width" constant="120" id="y48-9k-oZL"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.59982322080291972" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ypm-yJ-tTB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kk0-Pw-TbE"/>
+                <constraint firstItem="ypm-yJ-tTB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="mdG-Ft-kQ5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="16"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="indicator" destination="ypm-yJ-tTB" id="67F-6r-0mf"/>
+            </connections>
+            <point key="canvasLocation" x="180" y="38"/>
+        </view>
+    </objects>
+</document>

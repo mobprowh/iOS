@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BA_FakeTabBarView" customModule="bahisadam" customModuleProvider="target">
+            <connections>
+                <outlet property="currentTabBarLastTabImage" destination="s3K-qK-7iN" id="8Lw-DF-LM8"/>
+                <outlet property="favoriteItem" destination="oOa-sw-nN7" id="X6B-to-YYP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="K4f-JZ-xXd">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tabBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEX-F8-poo">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.90588235289999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <items>
+                        <tabBarItem title="Maçlar" image="ball" id="7oB-v8-GJK"/>
+                        <tabBarItem tag="1" title="İstatistikler" image="stats" id="yjA-v6-xz5"/>
+                        <tabBarItem tag="2" title="Canlı" image="live" id="iN6-2S-a8Q"/>
+                        <tabBarItem tag="3" title="Puan/Fiks." image="BA_points" id="oOa-sw-nN7"/>
+                        <tabBarItem tag="4" title="" image="league_logo_tr" id="s3K-qK-7iN">
+                            <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
+                        </tabBarItem>
+                    </items>
+                    <color key="barTintColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="selectedImageTintColor" red="0.0" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="4M0-V6-gfS"/>
+                    </connections>
+                </tabBar>
+            </subviews>
+            <color key="backgroundColor" red="0.87843137250000003" green="0.90588235289999997" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yEX-F8-poo" secondAttribute="trailing" id="8We-dv-t9c"/>
+                <constraint firstItem="yEX-F8-poo" firstAttribute="top" secondItem="K4f-JZ-xXd" secondAttribute="top" id="lkl-wJ-nzI"/>
+                <constraint firstAttribute="bottom" secondItem="yEX-F8-poo" secondAttribute="bottom" id="ntM-A4-TCh"/>
+                <constraint firstItem="yEX-F8-poo" firstAttribute="leading" secondItem="K4f-JZ-xXd" secondAttribute="leading" id="vt3-qc-FXQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+            <point key="canvasLocation" x="27" y="-368"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BA_points" width="28" height="28"/>
+        <image name="ball" width="28" height="28"/>
+        <image name="league_logo_tr" width="40" height="37"/>
+        <image name="live" width="28" height="28"/>
+        <image name="stats" width="28" height="28"/>
+    </resources>
+</document>

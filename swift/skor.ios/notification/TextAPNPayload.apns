@@ -1,0 +1,11 @@
+{
+    "aps": {
+        "alert": {
+            "body": "Lorem ipsum dolor sit amet",
+            "title": "Hello",
+        },
+        "category": "bahisadamAPN",
+		"sound": "default",
+		"badge": "1"
+    }
+}

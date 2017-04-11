@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "IB1-yG-cCx"; */
+"IB1-yG-cCx.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "MWW-rA-CYh"; */
+"MWW-rA-CYh.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "PM2-P8-sLE"; */
+"PM2-P8-sLE.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "WlB-cZ-WoF"; */
+"WlB-cZ-WoF.text" = "Label";
+
+/* Class = "UIButton"; focusedTitle = "Yenile"; ObjectID = "ifo-rc-qEo"; */
+"ifo-rc-qEo.focusedTitle" = "Yenile";
+
+/* Class = "UIButton"; normalTitle = "Yenile"; ObjectID = "ifo-rc-qEo"; */
+"ifo-rc-qEo.normalTitle" = "Yenile";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lic-la-1bw"; */
+"lic-la-1bw.text" = "Label";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "mpD-RV-2eQ"; */
+"mpD-RV-2eQ.text" = "-";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "tgA-nC-mQE"; */
+"tgA-nC-mQE.text" = "Label";
+
+/* Class = "UILabel"; text = "Henüz başlamış bir maç bulunmamaktadır."; ObjectID = "vDk-J1-j2D"; */
+"vDk-J1-j2D.text" = "Henüz başlamış bir maç bulunmamaktadır.";

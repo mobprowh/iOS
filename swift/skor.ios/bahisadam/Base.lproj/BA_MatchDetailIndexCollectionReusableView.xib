@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="matchDetailIndexHeader" id="QmB-dh-afY" customClass="BA_MatchDetailIndexCollectionReusableView" customModule="bahisadam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Fe-8z-EYz">
+                    <rect key="frame" x="0.0" y="2" width="375" height="36"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mE1-3b-scJ">
+                            <rect key="frame" x="10" y="12" width="357" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                            <color key="textColor" red="0.16862745098039217" green="0.19215686274509802" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90196078431372551" green="0.91764705882352937" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="mE1-3b-scJ" firstAttribute="top" secondItem="9Fe-8z-EYz" secondAttribute="top" constant="12" id="95w-MW-4aN"/>
+                        <constraint firstItem="mE1-3b-scJ" firstAttribute="leading" secondItem="9Fe-8z-EYz" secondAttribute="leading" constant="10" id="Cev-R9-K8e"/>
+                        <constraint firstAttribute="trailing" secondItem="mE1-3b-scJ" secondAttribute="trailing" constant="8" id="QlN-o1-p1b"/>
+                        <constraint firstAttribute="bottom" secondItem="mE1-3b-scJ" secondAttribute="bottom" id="fXM-g1-IZS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9Fe-8z-EYz" secondAttribute="trailing" id="KhN-gH-D8M"/>
+                <constraint firstItem="9Fe-8z-EYz" firstAttribute="leading" secondItem="QmB-dh-afY" secondAttribute="leading" id="Tj9-6O-ADI"/>
+                <constraint firstItem="9Fe-8z-EYz" firstAttribute="top" secondItem="QmB-dh-afY" secondAttribute="top" constant="2" id="UzX-2q-XDN"/>
+                <constraint firstAttribute="bottom" secondItem="9Fe-8z-EYz" secondAttribute="bottom" constant="2" id="sB2-WZ-0au"/>
+            </constraints>
+            <connections>
+                <outlet property="cellTitle" destination="mE1-3b-scJ" id="Ft6-x7-czS"/>
+                <outlet property="cellView" destination="9Fe-8z-EYz" id="T63-oj-UUA"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52"/>
+        </collectionReusableView>
+    </objects>
+</document>
